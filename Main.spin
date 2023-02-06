@@ -7,10 +7,10 @@ CON
 VAR
 
 OBJ
-  clockObj : "i2cClock"
-  bme280Obj : "BME280"
+  clockObj  : "i2cClockV2"
+  bme280Obj : "BME280V2"
 
-PUB Main | clk_success, reset_success, bme280_success
+PUB Main | clk_success, calData_success, bme280_success
   {Call the clock cog start method}
   clk_success := clockObj.Start
   {Call the bme280 cog start method}
